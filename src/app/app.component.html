@@ -1,23 +1,14 @@
 <div class="p-grid p-jc-center">
-  <div class="qr p-d-none p-d-lg-flex">
+  <div class="qr">
     <qr-scanner
-      [debug]="false"
-      [canvasWidth]="640"
-      [canvasHeight]="480"
-      [stopAfterScan]="true"
-      [updateTime]="500"
-    >
-    </qr-scanner>
-  </div>
-  <div class="qr p-d-lg-none">
-    <qr-scanner
-      [debug]="false"
-      [canvasWidth]="324"
-      [canvasHeight]="524"
-      [stopAfterScan]="true"
-      [updateTime]="500"
-    >
-    </qr-scanner>
+    [debug]="false"
+    [canvasWidth]="524"
+    [canvasHeight]="524"
+    [stopAfterScan]="true"
+    [updateTime]="500"
+    styleClass="p-d-md-none"
+  >
+  </qr-scanner>
   </div>
 </div>
 

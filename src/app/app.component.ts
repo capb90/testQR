@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    // this.qrScannerComponent.startScanning(null);
+    
 
   }
 
@@ -53,7 +53,8 @@ export class AppComponent implements OnInit {
    
 
     this.qrScannerComponent.capturedQr.subscribe(dataQR => {
-     console.log(dataQR)
+     console.log(dataQR);
+     window.location.href=dataQR
     });
    
      

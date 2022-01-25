@@ -18,9 +18,6 @@ export class AppComponent implements OnInit {
   
   @ViewChild(QrScannerComponent,{static:false}) qrScannerComponent: QrScannerComponent ;
 
-  Width=window.innerWidth;
-  heigh=window.innerHeight;
-  
   constructor() {}
 
   ngOnInit() {

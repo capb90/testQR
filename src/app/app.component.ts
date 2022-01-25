@@ -35,6 +35,7 @@ export class AppComponent implements OnInit {
             }
         }
         if (videoDevices.length > 0){
+            console.log("🚀 videoDevices", videoDevices)
             let choosenDev;
             for (const dev of videoDevices){
                 if (dev.label.includes('back')){
@@ -42,6 +43,7 @@ export class AppComponent implements OnInit {
                     break;
                 }
             }
+            console.log("🚀 choosenDev", choosenDev)
             if (choosenDev) {
                 this.qrScannerComponent.chooseCamera.next(choosenDev);
             } else {

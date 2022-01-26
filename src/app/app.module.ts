@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NgQrScannerModule } from 'angular2-qrscanner';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { ZXingScannerModule } from '@zxing/ngx-scanner';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     NgQrScannerModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ZXingScannerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

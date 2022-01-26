@@ -54,14 +54,10 @@ export class AppComponent implements OnInit {
 
     this.qrScannerComponent.capturedQr.subscribe(dataQR => {
      console.log(dataQR);
-     window.location.href=dataQR
+     this.scanResult=dataQR;
+    // window.location.href=dataQR
     });
    
      
-  }
-
-  onCodeResult($event){
-    console.log("🚀 ~ file: app.component.ts ~ line 65 ~ AppComponent ~ onCodeResult ~ $event)", $event);
-    this.scanResult=$event;
   }
 }

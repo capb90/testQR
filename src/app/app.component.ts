@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
   qrScannerComponent: QrScannerComponent;
 
   get canvasWidth(): number {
-    return window.outerWidth;
+    return window.outerHeight;
   }
 
   get canvasHeight(): number {

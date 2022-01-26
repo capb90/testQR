@@ -3,13 +3,17 @@
     <qr-scanner
     [debug]="false"
     [canvasWidth]="524"
-    [canvasHeight]="524"
+    [canvasHeight]="480"
     [stopAfterScan]="true"
     [updateTime]="500"
     styleClass="p-d-md-none"
   >
-  </qr-scanner> 
+  </qr-scanner>
   </div>
+  <pre>
+    <small>Scan Result</small>
+    <strong>{{scanResult}}</strong>
+  </pre>
 </div>
 
 <h1>Prueba final</h1>

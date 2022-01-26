@@ -9,13 +9,12 @@ import {QrScannerComponent} from 'angular2-qrscanner';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   encapsulation: ViewEncapsulation.None,
-
 })
 export class AppComponent implements OnInit {
 
 
 
-  
+    scanResult
   @ViewChild(QrScannerComponent,{static:false}) qrScannerComponent: QrScannerComponent ;
 
   constructor() {}
@@ -55,7 +54,8 @@ export class AppComponent implements OnInit {
 
     this.qrScannerComponent.capturedQr.subscribe(dataQR => {
      console.log(dataQR);
-     window.location.href=dataQR
+     this.scanResult=dataQR
+     //window.location.href=dataQR
     });
    
      

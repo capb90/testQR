@@ -55,7 +55,7 @@ export class AppComponent implements OnInit {
     this.qrScannerComponent.capturedQr.subscribe(dataQR => {
      console.log(dataQR);
      this.scanResult=dataQR;
-     window.location.href=dataQR
+     //window.location.href=dataQR
     });
    
      
